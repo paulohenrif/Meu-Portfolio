@@ -1,9 +1,13 @@
 @charset "UTF-8";
 
+/* FONTE IMPORTADA */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
 * {
     margin: 0;
     padding: 0;
-    font-size: 25px;
+    font-size: 24px;
 }
 ::selection {
     background-color: rgba(128, 128, 128, 0.568);
@@ -12,7 +16,7 @@
     display: none;
 }
 body, html {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     width: 100%;
     height: 100%;
 }
@@ -33,7 +37,6 @@ div#logo {
     font-weight: bold;
 }
 
-
 /* LOAD DA PAGINA */
 .loading-overlay {
     position: fixed;
@@ -41,7 +44,7 @@ div#logo {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.896);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,12 +54,12 @@ div#logo {
     text-align: center;
 }
 .loader {
-    border: 8px solid #f3f3f3;
-    border-top: 8px solid black;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid rgb(0, 0, 0);
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    animation: spin 1s linear infinite;
+    animation: spin 1s ease-out infinite;
     margin: 20px auto;
 }
 @keyframes spin {
@@ -64,7 +67,6 @@ div#logo {
     100% { transform: rotate(360deg); }
 }
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
-
 
 /* CABEÇALHO */
 nav {
@@ -78,7 +80,6 @@ header {
     padding: 20px;
 }
 li {
-    padding: 3px;
     margin-bottom: 10px;
 }
 li a:hover {
@@ -86,7 +87,6 @@ li a:hover {
     transition: 1s;
 }
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
-
 
 /* APRESENTAÇÃO */
 .nav-list {
@@ -105,7 +105,6 @@ li a:hover {
     width: 36px;
     height: 36px;
     font-weight: lighter;
-    cursor: pointer;
     user-select: none;
 }
 .nav-list a {
@@ -119,7 +118,6 @@ div#links a:hover {
     transition: 1s;
 }
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
-
 
 /* MINHAS SKILLS */
 .frame_skll_1{
@@ -169,7 +167,6 @@ div.frame {
 }
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-
 /* MINHAS EXPERIÊNCIAS */
 section#experience {
     background-color: black;
@@ -194,11 +191,9 @@ div#links > a > img {
 .tags {
     max-width: 500px;
     padding: 10px;
-    font-size: 20px;
     margin: auto;
 }
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
-
 
 /* MEUS CURSOS */
 #h1_cursos {
@@ -223,7 +218,6 @@ input:hover {
 }
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-
 /* MEUS PROJETOS */
 section#projetos {
     background-color: black;
@@ -235,7 +229,6 @@ div#column1, #column2, #column3 {
 }
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
-
 /* SOBRE MIM / DEMAIS DIRECIONAMENTOS */
 .direcionamento {
     text-decoration: none;
@@ -245,7 +238,6 @@ div#column1, #column2, #column3 {
     text-decoration: 1px underline;
 }
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
-
 
 /* RODAPÉ DO SITE */
 footer {
