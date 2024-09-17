@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     font-size: 24px;
+    scroll-behavior: smooth;
 }
 ::selection {
     background-color: rgba(128, 128, 128, 0.568);
